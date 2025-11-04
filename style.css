@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px
+
+}
+
+
+#cute-button {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.1s;
+
+}
+
+#cute-button:hover {
+    transform: scale(1.1);
+}
+
+#cute-button:active {
+    transform: scale(0.9, 0.95);
+}
+
+#confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+}
